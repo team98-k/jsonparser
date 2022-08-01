@@ -7,7 +7,6 @@ C++ Json 라이브러리
 
 ## Example
 ```json
-// example.json
 {
     "number": 10,
     "account": {
@@ -41,8 +40,8 @@ int main()
 ```
 
 ## Function List
-jsonparser::jsonparser(string a_filename)
-T jsonparser::get()
-void jsonparser::AddPath(string ...)
-void jsonparser::DelPath()
-void jsonparser::Write(string a_filename)
+jsonparser::jsonparser(string a_filename)  
+T jsonparser::get()  
+void jsonparser::AddPath(string ...)  
+void jsonparser::DelPath()  
+void jsonparser::Write(string a_filename)  
