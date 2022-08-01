@@ -42,6 +42,10 @@ endif ()
 # Make library file.
 add_executable(
     ${PROJECT_NAME}
+    ${srcPath}/Json.cpp
+    ${srcPath}/Json_Read.cpp
+    ${srcPath}/Json_Write.cpp
+    ${srcPath}/Log.cpp
     ${srcPath}/main.cpp
 )
 

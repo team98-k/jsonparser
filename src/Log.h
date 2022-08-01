@@ -7,15 +7,13 @@
 #define log_debug(...) SPDLOG_DEBUG(__VA_ARGS__)
 #define log_trace(...) SPDLOG_TRACE(__VA_ARGS__)
 
-namespace Utility
-{
-    // Return curent build process is in debug or not.
-    inline bool IsDebug()
-    {
-        #ifdef _DEBUG
-            return true;
-        #else
-            return false;
-        #endif
-    }
+#include "spdlog/spdlog.h"
+#include "spdlog/sinks/stdout_color_sinks.h"
+
+namespace log {
+    // 빌드 타입의 디버그 여부 반환.
+    inline bool IsDebug();
+
+    // spdlog 디버그 로그 활성화.
+    void InitializeLogging();
 }
