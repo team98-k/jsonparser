@@ -7,7 +7,7 @@ C++ Json 라이브러리
 
 ## Example
 ```json
-// src/example.json
+// example.json
 {
     "number": 10,
     "account": {
@@ -24,7 +24,7 @@ using namespace jsonparser
 
 int main()
 {
-    json jsonfile("src/example.json");
+    json jsonfile("example.json");
     int i = jsonfile.get("number");
     std::cout << i << std::endl;
 
