@@ -1,7 +1,7 @@
 #include <string>
 
 #include "Json.h"
-//#include "Log.h"
+#include "Log.h"
 
 namespace jsonparser {
     const string& json::GetFile() const

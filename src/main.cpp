@@ -10,7 +10,7 @@ int main()
 {
     log::InitializeLogging();
     
-    log_debug("jsonparser launched in debug");
+    // log_debug("jsonparser launched in debug");
 
     Test();
 
