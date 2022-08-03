@@ -21,7 +21,7 @@ set(CMAKE_CXX_STANDARD_REQUIRED True)
 set(srcPath ${CMAKE_CURRENT_SOURCE_DIR}/src)
 
 # Find spdlog.
-# find_package(spdlog CONFIG REQUIRED)
+find_package(spdlog CONFIG REQUIRED)
 
 # Checking build type
 if (CMAKE_BUILD_TYPE STREQUAL "")
@@ -60,7 +60,7 @@ target_include_directories(
 target_link_libraries(
 	${PROJECT_NAME}
 	PRIVATE
-	# spdlog::spdlog_header_only
+	spdlog::spdlog_header_only
 )
 
 # Compile options.

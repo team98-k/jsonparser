@@ -21,6 +21,6 @@ namespace jsonparser {
 
     void json::SetText(const string& _text)
     {
-        mstrFile = _text;
+        mstrText = _text;
     }
 }

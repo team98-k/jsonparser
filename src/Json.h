@@ -28,11 +28,22 @@ namespace jsonparser {
         // 데이터 멤버 mstrText 값 설정.
         void SetText(const string&);
 
-        void Serialize(int A);
+        // 데이터 멤버 mstrText 문자열 결합.
+        void AddText(const string&);
+
+        template <typename T>
+        void Serialize(T, const string&);
+
         void Write();
 
     private:
         string mstrFile; // json 파일 경로를 갖는 데이터 멤버.
         string mstrText; // json 파일에 작성할 실제 내용을 갖는 데이터 멤버.
     };
+
+    // Read 테스트를 위한 메인 함수.
+    void main_read();
+
+    // Write 테스트를 위한 메인 함수.
+    void main_write();
 }
