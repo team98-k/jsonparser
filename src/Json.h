@@ -28,17 +28,16 @@ namespace jsonparser {
         // 데이터 멤버 mstrText 값 설정.
         void SetText(const string&);
 
-<<<<<<< Updated upstream
         // 데이터 멤버 mstrText 문자열 결합.
         void AddText(const string&);
 
         template <typename T>
         void Serialize(T, const string&);
 
-=======
-        void Read();
+        //Json Reader
+        void ReadJson();
+
         void Serialize(int A);
->>>>>>> Stashed changes
         void Write();
 
     private:
