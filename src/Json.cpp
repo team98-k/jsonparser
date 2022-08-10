@@ -14,6 +14,11 @@ namespace jsonparser {
         return mstrText;
     }
 
+    const string& json::GetSpace() const
+    {
+        return mstrSpace;
+    }
+
     void json::SetFile(const string& _file)
     {
         mstrFile = _file;
@@ -22,5 +27,10 @@ namespace jsonparser {
     void json::SetText(const string& _text)
     {
         mstrText = _text;
+    }
+
+    void json::SetSpace(const string& _space)
+    {
+        mstrSpace = _space;
     }
 }
