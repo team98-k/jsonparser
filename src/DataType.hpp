@@ -36,3 +36,15 @@ std::string GetTypeName()
 
     return result;
 }
+
+template <class T, class S>
+struct is_string
+{
+    static const bool value = false;
+};
+
+template <class T, class Traits, class Alloc>
+struct is_string<T, std::basic_string<T, Traits, Alloc>>
+{
+    static const bool value = true;
+};
